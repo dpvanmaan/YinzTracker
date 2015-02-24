@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YinzTracker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="AddPlaceButton">Add Place</string>
+    <string name="DBName">PlaceDB</string>
+    <string name="DBVersion">1</string>
+</resources>
