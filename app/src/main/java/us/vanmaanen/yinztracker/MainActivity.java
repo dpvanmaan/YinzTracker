@@ -1,9 +1,11 @@
 package us.vanmaanen.yinztracker;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import java.util.Map;
 
@@ -40,17 +42,21 @@ public class MainActivity extends ActionBarActivity {
     }
     public void ListListner(){
         //Provide function for item that is clicked
+        //TODO - Write Function for Listner for Main Place list
+
     }
-    public void ClickAddPlace(){
+    public void ClickAddPlace(View view){
         //Add Place on Button Click... Launch Add_edit_activity
+        Intent intent = new Intent(this, AddEditActivity.class);
+        startActivity(intent);
 
     }
     public void InsertPlace(String name,Integer id){
-        //
+        //TODO - Write Function to insert Place into list by name and id
 
     }
     public void InsertPlace(Map<Integer, String> places){
-       //
+       //TODO - Write Function to insert place into list list given MAP???
     }
 
 }

@@ -11,10 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/PlaceList"
-        android:layout_gravity="center|center_horizontal"/>
+        android:layout_gravity="center|center_horizontal"
+        android:layout_weight="5"/>
     <Button
         style="@style/FullBlackButton"
         android:textAlignment="center"
         android:text="@string/AddPlaceButton"
-        android:id="@+id/ButtonAddPlace"/>
+        android:id="@+id/ButtonAddPlace"
+        android:onClick="ClickAddPlace"/>
 </LinearLayout>
