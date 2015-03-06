@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@drawable/gold_gradient"
+    >
+    <TextView android:id="@+id/SpinnerItemName"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:textColor="@color/black"
+        android:background="#00000000"/>
 </LinearLayout>
