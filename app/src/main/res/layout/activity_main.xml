@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/PlaceList"
         android:layout_gravity="center|center_horizontal"
-        android:layout_weight="5"/>
+        android:layout_weight="0.8"/>
     <Button
         style="@style/FullBlackButton"
+        android:layout_gravity="bottom"
         android:textAlignment="center"
         android:text="@string/AddPlaceButton"
         android:id="@+id/ButtonAddPlace"
