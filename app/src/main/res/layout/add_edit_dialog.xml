@@ -2,5 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <Spinner
+        style="@style/BlackTextBox"
+        android:id="@+id/routeSpinner"
+        android:prompt="@string/ChooseRoute"
+        android:background="@drawable/spinner_selector"
+        android:layout_weight="1" />
+    <Spinner
+        style="@style/BlackTextBox"
+        android:id="@+id/directionSpinner"
+        android:prompt="@string/ChooseDirection"
+        android:background="@drawable/spinner_selector"
+        android:layout_weight="1" />
+    <Spinner
+        style="@style/BlackTextBox"
+        android:id="@+id/stopSpinner"
+        android:prompt="@string/ChooseStop"
+        android:background="@drawable/spinner_selector"
+        android:layout_weight="1" />
+    <Button
+        style="@style/FullGoldButton"
+        android:text="@string/DialogAdd"
+        android:id="@+id/DialogAdd"
+        android:gravity="center"
+        />
 </LinearLayout>
