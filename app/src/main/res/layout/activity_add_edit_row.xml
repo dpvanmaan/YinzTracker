@@ -1,26 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Spinner
-        style="@style/BlackTextBox"
-        android:id="@+id/route"
-        android:layout_weight="1" />
-    <Spinner
-        style="@style/BlackTextBox"
-        android:id="@+id/direction"
-        android:layout_weight="1" />
-    <Spinner
-        style="@style/BlackTextBox"
-        android:id="@+id/stop"
-        android:layout_weight="1" />
-    <Button
-        style="@style/SmallGoldButton"
-        android:text="+"
-        android:id="@+id/add"/>
-    <Button
-        style="@style/SmallGoldButton"
-        android:text="-"
-        android:id="@+id/delete"/>
+    android:useDefaultMargins="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/BlackTextBox"
+                android:id="@+id/route"
+                android:layout_width="match_parent"
+                android:gravity="fill"
+                android:text="Hi"
+                android:layout_column="0"/>
+            <TextView
+                style="@style/BlackTextBox"
+                android:layout_width="match_parent"
+                android:id="@+id/direction"
+                android:gravity="fill"
+                android:text="you"/>
+            <TextView
+                style="@style/BlackTextBox"
+                android:layout_width="match_parent"
+                android:id="@+id/stop"
+                android:gravity="fill"
+                android:text="hey"/>
+        </LinearLayout>
+        <Button
+            style="@style/SmallGoldButton"
+            android:layout_width="50dp"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:text="X"
+            android:id="@+id/addEditRemove"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gold"
+        />
 
 </LinearLayout>
