@@ -8,6 +8,11 @@
     <string name="DBVersion">1</string>
     <string name="title_activity_add_edit">AddEditActivity</string>
     <string name="BusRoutePrompt">Bus Route</string>
-    <string name="place_name">Place Name</string>
+    <string name="place_name">Place Name : </string>
     <string name="save">Save</string>
+    <string name="ChooseRoute">Choose Route</string>
+    <string name="DialogAdd">Add</string>
+    <string name="ChooseDirection">Choose Direction</string>
+    <string name="ChooseStop">Choose Stop</string>
+    <string name="title_activity_time_table">Time Table</string>
 </resources>
