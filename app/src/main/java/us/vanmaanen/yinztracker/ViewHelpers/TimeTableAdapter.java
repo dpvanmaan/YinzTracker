@@ -49,7 +49,12 @@ public class TimeTableAdapter extends ArrayAdapter<RouteStop> {
             Time.setText("NA");
         }
         else{
-            Time.setText(""+next.get(0));
+            if (next.get(0)==0) {
+                Time.setText("Arr");
+            }
+            else {
+                Time.setText("" + next.get(0));
+            }
         }
 
         return convertView;

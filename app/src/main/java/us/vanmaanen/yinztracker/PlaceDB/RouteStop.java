@@ -56,6 +56,7 @@ public class RouteStop extends SugarRecord<RouteStop> {
                         Log.d("App","update done rt: "+rtId+" stpid: "+stopId);
                         if (stringMapMap.get("bustime-response").get("error")!=null){
                             Log.e("App",stringMapMap.get("bustime-response").get("error").get(0).getMsg());
+                            setMinToBus(null);
                         }
                         else {
                             ArrayList<Pred> predResponse = stringMapMap.get("bustime-response").get("prd");
@@ -63,7 +64,12 @@ public class RouteStop extends SugarRecord<RouteStop> {
                             Log.d("App", "PRDTM: " + predResponse.get(0).getPrdtm());
                             Log.d("App", "PRDCTDN: " + predResponse.get(0).getPrdctdn());
                             for (Pred prd : predResponse) {
-                                nexts.add(new Integer(prd.getPrdctdn()));
+                                try {
+                                    nexts.add(Integer.parseInt(prd.getPrdctdn()));
+                                }
+                                catch (NumberFormatException nfe){
+                                    nexts.add(0);
+                                }
                             }
                             setMinToBus(nexts);
                         }
